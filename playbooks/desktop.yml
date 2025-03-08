@@ -1,5 +1,6 @@
-- name: configure mirrors
+- name: configure desktop
   hosts: laptop
   roles:
     - sway
     - alacritty
+    - rofi

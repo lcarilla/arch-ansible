@@ -1,0 +1,5 @@
+- name: configure mirrors
+  hosts: laptop
+  roles:
+    - fonts
+    - alacritty

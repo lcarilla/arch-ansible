@@ -1,0 +1,4 @@
+- name: copy config
+  copy:
+    src: templates/
+    dest: /home/luis/.config/rofi

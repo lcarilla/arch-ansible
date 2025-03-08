@@ -1,0 +1,6 @@
+- name: Install base packages
+  community.general.pacman:
+    name:
+      - ttf-jetbrains-mono
+    state: latest
+    update_cache: true

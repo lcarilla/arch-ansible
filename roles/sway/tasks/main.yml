@@ -3,6 +3,8 @@
     name:
       - sway
       - swaybg
+      - rofi-wayland
+      - chromium
     state: latest
     update_cache: true
 - name: Create .config/sway director
