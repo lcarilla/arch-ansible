@@ -4,5 +4,6 @@
       - chromium
       - firefox
       - fastfetch
+      - code
     state: latest
     update_cache: true

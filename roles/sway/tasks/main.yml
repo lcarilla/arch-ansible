@@ -28,3 +28,10 @@
   copy:
     src: templates/arch.png
     dest: /home/luis/.config/sway/wallpaper.png
+- name: copy profile
+  copy:
+    src: templates/profile.sh
+    dest: /home/luis/.zprofile
+    mode: 0755
+    owner: luis
+    group: luis

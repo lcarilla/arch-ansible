@@ -1,4 +1,4 @@
 - name: configure mirrors
   hosts: laptop
   roles:
-    - gtk
+    - alacritty

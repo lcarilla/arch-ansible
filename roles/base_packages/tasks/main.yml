@@ -7,5 +7,7 @@
       - vim
       - python
       - htop
+      - zsh
+      - git
     state: latest
     update_cache: true
