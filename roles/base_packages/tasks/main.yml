@@ -1,0 +1,11 @@
+- name: Install base packages
+  community.general.pacman:
+    name:
+      - linux
+      - linux-lts
+      - openssh
+      - vim
+      - python
+      - htop
+    state: latest
+    update_cache: true

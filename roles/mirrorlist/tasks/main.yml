@@ -1,0 +1,4 @@
+- name: configure mirrorlist
+  copy:
+    src: templates/mirrorlist
+    dest: /etc/pacman.d/mirrorlist

@@ -1,0 +1,4 @@
+- name: install base packages
+  hosts: laptop
+  roles:
+    - base_packages

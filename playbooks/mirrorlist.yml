@@ -1,0 +1,4 @@
+- name: configure mirrors
+  hosts: laptop
+  roles:
+    - mirrorlist

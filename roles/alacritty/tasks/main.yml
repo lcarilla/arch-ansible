@@ -1,0 +1,16 @@
+- name: Install alacritty
+  community.general.pacman:
+    name:
+      - alacritty
+    state: latest
+    update_cache: true
+- name: Create .config/alacritty director
+  ansible.builtin.file:
+    path: "/home/luis/.config/alacritty"
+    state: directory
+    owner: luis
+    group: luis
+- name: copy config file
+  copy:
+    src: templates/alacritty.toml
+    dest: /home/luis/.config/alacritty/alacritty.toml

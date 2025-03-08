@@ -1,0 +1,21 @@
+- name: Install sway package
+  community.general.pacman:
+    name:
+      - sway
+      - swaybg
+    state: latest
+    update_cache: true
+- name: Create .config/sway director
+  ansible.builtin.file:
+    path: "/home/luis/.config/sway"
+    state: directory
+    owner: luis
+    group: luis
+- name: copy config file
+  copy:
+    src: templates/config
+    dest: /home/luis/.config/sway/config
+- name: copy wallpaper
+  copy:
+    src: templates/arch.png
+    dest: /home/luis/.config/sway/wallpaper.png
