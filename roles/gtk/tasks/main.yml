@@ -1,0 +1,10 @@
+- name: Create .config/gtk3.0 dir
+  ansible.builtin.file:
+    path: "/home/luis/.config/gtk-3.0"
+    state: directory
+    owner: luis
+    group: luis
+- name: copy config file
+  copy:
+    src: templates/settings.ini
+    dest: "/home/luis/.config/gtk-3.0/settings.ini"

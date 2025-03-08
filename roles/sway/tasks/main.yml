@@ -17,6 +17,13 @@
   copy:
     src: templates/config
     dest: /home/luis/.config/sway/config
+- name: copy bar script
+  copy:
+    src: templates/swaybar.sh
+    dest: /home/luis/.config/sway/status.sh
+    mode: 0755
+    owner: luis
+    group: luis
 - name: copy wallpaper
   copy:
     src: templates/arch.png

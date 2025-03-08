@@ -239,15 +239,15 @@ mode "resize" {
 bar {
     position top
 
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    status_command while ~/.config/sway/status.sh; do sleep 60; done
 
     colors {
+        # Text color of status bar
         statusline #ffffff
+        # Background of status bar
         background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
     }
+    font pango:JetBrains Mono 11
 }
 
 bindsym $mod+r mode "resize"
