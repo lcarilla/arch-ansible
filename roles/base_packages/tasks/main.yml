@@ -9,5 +9,10 @@
       - htop
       - zsh
       - git
+      - flatpak
+      - pipewire-pulse
+      - xdg-desktop-portal-wlr
+      - ansible
+      - fuse2
     state: latest
     update_cache: true

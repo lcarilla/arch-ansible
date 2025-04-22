@@ -1,5 +1,5 @@
 # WALLPAPER
-output * background ~/.config/sway/wallpaper.png fill
+output * background ~/.config/sway/wallpaper.jpg fill
 
 ### Variables
 #

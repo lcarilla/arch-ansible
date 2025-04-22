@@ -26,8 +26,8 @@
     group: luis
 - name: copy wallpaper
   copy:
-    src: templates/arch.png
-    dest: /home/luis/.config/sway/wallpaper.png
+    src: templates/sunset_minimal_landscape_4k.jpg
+    dest: /home/luis/.config/sway/wallpaper.jpg
 - name: copy profile
   copy:
     src: templates/profile.sh

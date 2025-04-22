@@ -4,6 +4,8 @@
       - chromium
       - firefox
       - fastfetch
+      - helix
+      - xorg-xwayland
       - code
     state: latest
     update_cache: true
